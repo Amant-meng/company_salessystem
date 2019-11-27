@@ -1,0 +1,19 @@
+#开发配置文件
+spring:
+  profiles: dev
+   #数据源配置
+   datasource:
+      url: jdbc:mysql://localhost:3306/sales_db?useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true&useSSL=true
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      username: root
+      password: 123456
+   jpa:
+     hibernate.ddl-auto: update
+     show-sql: true
+   thymeleaf:
+    cache: false
+
+#服务器端口设置
+server:
+  port: 8897
+
