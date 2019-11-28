@@ -17,7 +17,7 @@ import com.java1234.realm.MyRealm;
 
 /**
  * Shiro配置类
- * @author java1234 小锋 老师
+ * @author Meng.Yang
  *
  */
 @Configuration
@@ -41,7 +41,7 @@ public class ShiroConfig {
 
         // 如果不设置默认会自动寻找Web工程根目录下的"/login.jsp"页面
         shiroFilterFactoryBean.setLoginUrl("/login.html");
- 
+
 
         // 拦截器.
         Map<String, String> filterChainDefinitionMap = new LinkedHashMap<String, String>();
@@ -72,7 +72,7 @@ public class ShiroConfig {
 
     /**
      * 身份认证realm; (这个需要自己写，账号密码校验；权限等)
-     * 
+     *
      * @return
      */
     @Bean

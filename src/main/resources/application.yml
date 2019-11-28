@@ -2,12 +2,3 @@ spring:
   #开发模式
   profiles:
     active: dev
-  http:
-    encoding:
-      charset: UTF-8
-      enabled: true
-    multipart:
-    max-file-size: 10MB
-    max-request-size: 10MB
-  resources:
-    static-locations: classpath:/templates/
